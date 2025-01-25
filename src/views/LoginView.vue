@@ -1,4 +1,5 @@
 <script setup>
+import BrandLogo from '@/components/icons/BrandLogo.vue';
 import PasswordInput from '@/components/LoginForm/PasswordInput.vue';
 import PhoneNumber from '@/components/LoginForm/PhoneNumber.vue';
 
@@ -11,7 +12,7 @@ import PhoneNumber from '@/components/LoginForm/PhoneNumber.vue';
                 <svg height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/><polyline points="244 400 100 256 244 112" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/><line style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px" x1="120" x2="412" y1="256" y2="256"/></svg>
             </div>
             <div class="logo-container">
-
+                <BrandLogo/>
             </div>
         </div>
         <div class="login-container">
@@ -51,6 +52,12 @@ import PhoneNumber from '@/components/LoginForm/PhoneNumber.vue';
 
 .heading div {
     height: 100%;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .login-container {

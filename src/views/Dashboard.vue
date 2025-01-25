@@ -76,6 +76,9 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
                     <p class="metric-value">20,550</p>
                     <p class="metric-subtext">
                       <span id="metric-span">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.52869 3.52865L3.86203 7.19465C3.73717 7.31987 3.66705 7.48948 3.66705 7.66632C3.66705 7.84315 3.73717 8.01276 3.86203 8.13798C3.92388 8.19995 3.99735 8.2491 4.07823 8.28265C4.15911 8.31619 4.2458 8.33345 4.33336 8.33345C4.42092 8.33345 4.50761 8.31619 4.58849 8.28265C4.66936 8.2491 4.74283 8.19995 4.80469 8.13798L7.33336 5.60932V12C7.33336 12.1768 7.4036 12.3464 7.52862 12.4714C7.65365 12.5964 7.82322 12.6666 8.00003 12.6666C8.17684 12.6666 8.34641 12.5964 8.47143 12.4714C8.59645 12.3464 8.66669 12.1768 8.66669 12V5.60932L11.1954 8.13798C11.2573 8.19988 11.3308 8.24897 11.4117 8.28245C11.4926 8.31593 11.5794 8.33315 11.6669 8.33312C11.7545 8.33309 11.8412 8.31581 11.9221 8.28227C12.003 8.24873 12.0765 8.19959 12.1384 8.13765C12.2003 8.07571 12.2493 8.00218 12.2828 7.92127C12.3163 7.84036 12.3335 7.75365 12.3335 7.66608C12.3335 7.57851 12.3162 7.49181 12.2826 7.41092C12.2491 7.33004 12.2 7.25655 12.138 7.19465L8.47136 3.52865C8.40962 3.46653 8.33617 3.41728 8.25527 3.38375C8.17436 3.35022 8.0876 3.33308 8.00003 3.33332C7.91245 3.33308 7.82569 3.35022 7.74479 3.38375C7.66388 3.41728 7.59043 3.46653 7.52869 3.52865Z" fill="#AE2E24"/>
+                        </svg> 
                         2.95%
                       </span>
                       Compared to last month
@@ -107,7 +110,7 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
               </div>
               <div class="metric-card">
                   <h2 class="metric-title">Average Processing Time</h2>
-                  <p class="metric-value">06 Days | 14 Hours | 53 Minutes</p>
+                  <p id="pelumi" class="metric-value">06 Days | 14 Hours | 53 Minutes</p>
               </div>
          
             </div>
@@ -191,7 +194,7 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
             <hr>
             <div class="section-card">
               <h2 class="section-title">Top Products</h2>
-              <ul class="second-selection">
+              <ul class="section-list second-selection">
                 <li>
                     Errors Pharmaceuticals
                     <div class="progress-container">
@@ -474,10 +477,6 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
   gap: 0.5rem;
 }
 
-.second-selection {
-  color: #A3F94E;
-}
-
 .section-list li {
   font-size: 12px;
   line-height: 16px;
@@ -568,6 +567,14 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.second-selection .progress-bar::before {
+  background-color: #A3F94E;
+}
+
+#pelumi {
+  font-size: 14px;
 }
   
 
