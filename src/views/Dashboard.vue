@@ -75,7 +75,7 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
                   <div>
                     <p class="metric-value">20,550</p>
                     <p class="metric-subtext">
-                      <span>
+                      <span id="metric-span">
                         2.95%
                       </span>
                       Compared to last month
@@ -88,7 +88,7 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
                   <div>
                     <p class="metric-value">5,250,000</p>
                     <p class="metric-subtext">
-                      <span>
+                      <span id="metric-spann">
                         -12.95%
                       </span>
                       Compared to last month
@@ -191,7 +191,7 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
             <hr>
             <div class="section-card">
               <h2 class="section-title">Top Products</h2>
-              <ul class="section-list">
+              <ul class="second-selection">
                 <li>
                     Errors Pharmaceuticals
                     <div class="progress-container">
@@ -378,6 +378,8 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
   gap: 0.5rem;
 }
 
+
+
 .metric-subtext span {
   display: flex;
   align-items: center;
@@ -386,6 +388,20 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
   color: #216E4E;
   border-radius: 5px;
   font-weight: 700;
+}
+
+#metric-span {
+  background-color: #FFD5D2;
+  color: #AE2E24;
+}    
+
+#metric-spann {
+  background-color: #091E420F;
+  color: #172B4D;
+}
+
+.metrics-grid  span:nth-child(2) {
+  color: #FFD5D2;
 }
 
 .statistics-card {
@@ -458,6 +474,9 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
   gap: 0.5rem;
 }
 
+.second-selection {
+  color: #A3F94E;
+}
 
 .section-list li {
   font-size: 12px;
@@ -550,4 +569,6 @@ import AuthenticatedLayout from '@/components/Layouts/AuthenticatedLayout.vue';
   justify-content: center;
   align-items: center;
 }
+  
+
 </style>
